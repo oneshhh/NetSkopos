@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intrusion Detection System</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>NetSkopos</h1>
+    <h1>System Dashboard</h1>
+
+    <div id="graphContainer">
+        <canvas id="trafficChart"></canvas>
+    </div>
+
+    <!-- Critical Alerts Section -->
+    <section>
+        <h2>Critical Alerts</h2>
+        <div class="table-container">
+            <table id="criticalAlertsBox">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="2">No critical alerts detected</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Live Alerts -->
+    <section>
+        <h2>Live Alerts</h2>
+        <button onclick="fetchLiveAlerts()">Refresh Alerts</button>
+        <div class="table-container">
+            <table id="alertsTable">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>System</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3">No alerts available</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- File Access Logs -->
+    <section>
+        <h2>File Access Logs</h2>
+        <button onclick="fetchFileLogs()">Refresh File Logs</button>
+        <div class="table-container">
+            <table id="fileLogTable">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Log</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="2">No data yet</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Active Users -->
+    <section>
+        <h2>Active Users</h2>
+        <button onclick="fetchActiveUsers()">Refresh Active Users</button>
+        <div class="table-container">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Terminal</th>
+                        <th>Login Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3">No active users available</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Network Traffic -->
+    <section>
+        <h2>Live Network Traffic</h2>
+        <button onclick="fetchNetworkTraffic()">Refresh Network Traffic</button>
+        <div class="table-container">
+            <table id="trafficTable">
+                <thead>
+                    <tr>
+                        <th>Protocol</th>
+                        <th>Source IP</th>
+                        <th>Destination IP</th>
+                        <th>State</th>
+                        <th>Process</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="5">No traffic data available</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 🔁 JS Loader -->
+    <script src="scripttest.js" defer></script>
+
+</body>
+</html>
