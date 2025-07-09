@@ -1,13 +1,13 @@
 
-# NetSkopos - Intrusion Detection System (IDS)
+# NetSkopos - Security Information and Event Management (SIEM)
 
-NetSkopos is a lightweight, modular Intrusion Detection System (IDS) designed for monitoring and visualizing suspicious activities across a network or endpoint. Built using Python, Flask, and modern JavaScript, it provides a real-time web dashboard for tracking critical events like unauthorized file access, network spikes, brute force attempts, and user activity.
+NetSkopos is a lightweight, modular Security Information and Event Management (SIEM) designed for monitoring and visualizing suspicious activities across a network or endpoint. Built using Python, Flask, and modern JavaScript, it provides a real-time web dashboard for tracking critical events like unauthorised file access, network spikes, brute force attempts, and user activity.
 
-> ⚠️ **Disclaimer:** This system is a proof-of-concept built for academic and demonstration purposes. All alerts generated are **simulated**. The backend API has been intentionally modified to provide **fake but realistic** data samples, and it does not analyze actual live traffic or system logs. This project should **not** be used in production environments.
+>  **Disclaimer:** This system is a proof-of-concept built for academic and demonstration purposes. All alerts generated are **simulated**. The backend API has been intentionally modified to provide **fake but realistic** data samples, and it does not analyze actual live traffic or system logs. This project should **not** be used in production environments.
 
 ---
 
-## 🔍 Features
+##  Features
 
 - **Live Alerts**: Simulated detection of anomalies (e.g., brute force logins, potential DDoS).
 - **Network Traffic Monitoring**: Fake network activity logs updated in real-time.
@@ -19,7 +19,7 @@ NetSkopos is a lightweight, modular Intrusion Detection System (IDS) designed fo
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript, Chart.js, Bootstrap
 - **Backend**: Python, Flask
@@ -28,13 +28,13 @@ NetSkopos is a lightweight, modular Intrusion Detection System (IDS) designed fo
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/netskopos-ids.git
-cd netskopos-ids
+git clone https://github.com/yourusername/netskopos-SIEM.git
+cd netskopos-SIEM
 ```
 
 ### 2. Set Up the Environment
@@ -55,7 +55,7 @@ python app.py
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 NetSkopos/
@@ -74,9 +74,9 @@ NetSkopos/
 
 ---
 
-## 🧪 Simulated Behavior
+##  Simulated Behavior
 
-All log data and alerts are generated randomly using Python scripts to resemble real-world IDS logs. These include:
+All log data and alerts are generated randomly using Python scripts to resemble real-world SIEM logs. These include:
 
 - **Brute Force Attempts**
 - **DDoS Traffic Spikes**
@@ -87,7 +87,7 @@ No real-time network monitoring or log parsing is performed.
 
 ---
 
-## 📧 Email Alert Integration (Optional)
+## Email Alert Integration (Optional)
 
 An optional module allows for sending email notifications when critical simulated alerts are triggered. To enable:
 
@@ -97,7 +97,7 @@ An optional module allows for sending email notifications when critical simulate
 
 ---
 
-## ✅ Future Improvements
+## Future Improvements
 
 - Real-time log parsing using tools like `Syslog`, `AuditD`, or `OSSEC`
 - Integration with SIEM platforms (e.g., Splunk, ELK)
@@ -106,20 +106,17 @@ An optional module allows for sending email notifications when critical simulate
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 📢 Disclaimer
+## Disclaimer
 
-This IDS is built for **educational and demonstration purposes only**. The system simulates network and security behavior to illustrate how IDS mechanisms work. It **does not** monitor or protect real systems from threats and should **not** be used as a replacement for production-grade cybersecurity solutions.
+This SIEM is built for **educational and demonstration purposes only**. The system simulates network and security behavior to illustrate how SIEM mechanisms work. It **does not** monitor or protect real systems from threats and should **not** be used as a replacement for production-grade cybersecurity solutions.
 
 ---
 
-## 🙋‍♂️ Author
+## Author
 
 **Vansh Sabharwal**  
-Email: [your-email@example.com]  
-GitHub: [@yourusername](https://github.com/yourusername)
+Email: [vanshsabharwal29@gmail.com]  
+GitHub: [@yourusername](https://github.com/oneshh)
